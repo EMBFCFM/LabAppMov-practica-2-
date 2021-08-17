@@ -1,0 +1,16 @@
+article {
+    display: flex;
+    border-bottom: 1pxsolid #ddd;
+    padding:10px;
+    font-size: 0.9em;
+}
+
+span{
+    display:inline-block;
+    width: 22%;
+    margin-right: 2%;
+}
+
+items{
+    display: list-item !important;
+}

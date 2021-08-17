@@ -1,18 +1,18 @@
 <h2>Alta Cliente</h2>
 <p>
-    <spam>Nombre:</spam>
+    <span>Nombre:</span>
     <input type="text" [(ngModel)]="cliente.nombre">
 </p>
 <p>
-    <spam>CURP:</spam>
+    <span>CURP:</span>
     <input type="text" [(ngModel)]="cliente.curp">
 </p>
 <p>
-    <spam>Direccion:</spam>
+    <span>Direccion:</span>
     <input type="text" [(ngModel)]="cliente.direccion">
 </p>
 <p>
-    <spam>Grupo:</spam>
+    <span>Grupo:</span>
     <select [(ngModel)]="cliente.sexo">
         <option *ngFor="let grupo of grupos" value={{grupo.id}}>{{grupo.sexo}}</option>
         </select>

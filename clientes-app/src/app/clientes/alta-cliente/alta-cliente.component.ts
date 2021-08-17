@@ -9,8 +9,15 @@ import { Cliente, Grupo } from '../cliente.model';
 })
 export class AltaClienteComponent implements OnInit {
 
-  cliente!: Cliente;
-  grupos: Grupo[] | undefined;
+  cliente: Cliente =
+  {
+    id: 0,
+    nombre: '',
+    curp:'',
+    direccion: '',
+    sexo:0
+  };
+  grupos: Grupo[]=[];
 
   constructor(private ClientesService:ClientesService) {
 
